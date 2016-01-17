@@ -2,7 +2,7 @@
 "http://w...content-available-to-author-only...3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://w...content-available-to-author-only...3.org/1999/xhtml">
 <head>
-<title>Lab 19</title>
+<title>Jumble Maker</title>
 <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
 </head>
 <body>
@@ -10,8 +10,6 @@
 <?php
 
  define("NAME", "Bryce Pearce");
- define("COURSE", "CS 4312");
- define("LAB_NO", "19");
  define("DESCRIPTION", "Day Number");
  
  /* ------------------- Function: printHeader ----------- */
@@ -33,7 +31,7 @@
  . " \"http://w...content-available-to-author-only...3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">"
  . "<html xmlns=\"http://w...content-available-to-author-only...3.org/1999/xhtml\">"
  . "<head>"
- . "<title>" . NAME . " - " . COURSE . " - Lab " . LAB_NO
+ . "<title>" . NAME
  . "</title>"
  . "</head>"
  . "<body>"
@@ -60,7 +58,7 @@ echo "<HR />"
  function errorMsg($msg)
  {
  printHeader();
- writeBeginningHTML(NAME . " - " . COURSE . " - Lab "  . LAB_NO . " Jumble Word Solver Error");
+ writeBeginningHTML(" Jumble Word Solver Error");
  
  echo "Your form results could not be processed because ". $msg ;
  
